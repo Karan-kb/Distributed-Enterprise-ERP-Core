@@ -101,4 +101,4 @@ php artisan migrate --seed
 
 ## 👨‍💻 Primary Researcher
 
-* **Karan B.C.** - Systems Design Specialist | [GitHub Profile](https://github.com/Karan-kb) | [💼 LinkedIn Profile](https://linkedin.com)
+* **Karan B.C.** - Systems Design Specialist | [GitHub Profile](https://github.com/Karan-kb) | [💼 LinkedIn Profile](https://www.linkedin.com/in/karan-b-c-2162a81b8/)
