@@ -11,8 +11,8 @@ graph TD
     A[Load Testing Client] --> B[Nginx Reverse Proxy]
     B --> C[Tenant Identification Middleware]
     C --> D{Database Router Core}
-    D -->|Tenant Alpha| E[(Isolated DB Schema A)]
-    D -->|Tenant Beta| F[(Isolated DB Schema B)]
+    D -->|Tenant Alpha| E[(Isolated Target DB Schema A)]
+    D -->|Tenant Beta| F[(Isolated Target DB Schema B)]
     E --> G[Query Optimization Layer]
     F --> G
     G --> H[Redis Queue / Cache]
@@ -45,15 +45,7 @@ The system routing core was stress-tested using automated traffic simulation scr
 * **Routing Overhead:** System tenant schema detection and connection mapping calculations run efficiently, resolving at an O(1) time complexity cost.
 * **Workload Capacity:** Tested to securely process steady workloads of **10,000+ daily requests** without causing concurrent database deadlocks or query context drops.
 
-### 2. Measured Response Times Under Load
-
-| Operation Phase | Baseline Response | Optimized Architecture | Measured Improvement |
-| :--- | :--- | :--- | :--- |
-| **Relational Read Queries** | 120.45 ms | 72.27 ms | **40% Latency Reduction** |
-| **Concurrent Write Operations** | 240.10 ms | 144.06 ms | **40% Queue Optimization** |
-| **Tenant Routing Handshake** | 12.80 ms | 12.10 ms | Stable Execution Margin |
-
-### 3. Planned Development Extensions
+### 2. Planned Development Extensions
 * Incorporate reliable cluster management simulations (e.g., experimenting with **Raft** consensus mechanisms) to evaluate database state recovery patterns across multi-node environments.
 * Test database sharding strategies across distinct network nodes to study connection packet latency over wide area configurations.
 
@@ -99,4 +91,4 @@ php artisan migrate --seed
 
 ## 👨‍💻 Maintainer
 
-* **Karan B.C.** - Backend Software Engineer | [GitHub Profile](https://github.com/Karan-kb) | [LinkedIn Profile](https://www.linkedin.com/in/karan-b-c-2162a81b8/)
+* **Karan B.C.** - Backend Software Engineer | [GitHub Profile](https://github.com) | [LinkedIn Profile](https://linkedin.com)
