@@ -73,7 +73,7 @@ The codebase separates infrastructure setup, request handling pipelines, and ind
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com
+git clone https://github.com/Karan-kb/Distributed-Enterprise-ERP-Core.git
 cd Distributed-Enterprise-ERP-Core
 ```
 
